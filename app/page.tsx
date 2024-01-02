@@ -1,61 +1,50 @@
-import FredrikLogo from '@/app/ui/fredrik-logo';
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
-import Link from 'next/link';
-import { lusitana } from '@/app/ui/fonts';
 import Image from 'next/image';
+import Navbar from './navbar';
 
-const Navbar = () => {
+export default function Home() {
   return (
-    <nav className="flex items-center justify-between bg-blue-500 p-4">
-      <div>
-        <FredrikLogo />
-      </div>
-      <div className="flex items-center gap-4">
-        <Link href="/" className="text-white hover:text-gray-200">
-          Home
-        </Link>
-        {/* Add more navigation links as needed */}
-      </div>
-    </nav>
-  );
-};
-
-export default function Page() {
-  return (
-    <main className="flex min-h-screen flex-col p-6">
+    <>
       <Navbar />
-      {/* <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
-      </div> */}
-      <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
-        <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
-          <div className="h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-black border-l-transparent border-r-transparent" />
-          <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`}>
-            <p
-              className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}
-            >
-              <strong>Fredrik Hansteen</strong> Welcome to my website
-            </p>
+      <div className="relative h-[500px]">
+        <Image
+          src="/background-portofolio.png"
+          layout="fill"
+          objectFit="cover"
+          alt="Background"
+          className="z-0"
+        />
+        <div
+          className="absolute left-1/2 top-[10%] z-10 -translate-x-1/2 transform rounded p-4 shadow-lg"
+          style={{ background: 'rgba(117, 58, 136, 0.5)' }}
+        >
+          <p className="text-shadow text-xl font-bold text-white">
+            Welcome to my portfolio
           </p>
         </div>
-        <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-          {/* Add Hero Images Here */}
-          <Image
-            src="/fredrik-hansteen.jpg"
-            width={1000}
-            height={760}
-            className="hidden md:block"
-            alt="Screenshots of the dashboard project showing desktop version"
-          />
 
-          <Image
-            src={'/fredrik-hansteen.jpg'}
-            className="block md:hidden"
-            width={560}
-            height={620}
-            alt={'Screenshots of the dashboard project showing mobile version'}
-          />
+        <div
+          className="absolute left-[10%] top-[40%] z-10 -translate-x-1/2 -translate-y-1/2 transform rounded p-4 shadow-lg"
+          style={{ background: 'rgba(117, 58, 136, 0.7)' }}
+        >
+          <p className="text-shadow text-lg font-semibold text-white">
+            My name is Fredrik
+          </p>
+        </div>
+
+        <div
+          className="absolute left-[35%] top-[70%] z-10 -translate-x-1/2 -translate-y-1/2 transform rounded p-4 shadow-lg"
+          style={{ background: 'rgba(117, 58, 136, 0.7)' }}
+        >
+          <p className="text-shadow text-lg font-semibold text-white">
+            I'm Fredrik, a student and in my 2. year studying taking a bachelor
+            in informatics at "Norwegian University of Science and Technology"
+            (NTNU) Based In Trondheim, Norway. This is a portfolio website where
+            I showcase some of my personal projects and skills in the field of
+            software development. If you would like to know more about me, you
+            can check out my CV or contact me.
+          </p>
         </div>
       </div>
-    </main>
+    </>
   );
 }
