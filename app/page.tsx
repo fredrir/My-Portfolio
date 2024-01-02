@@ -36,12 +36,7 @@ export default function Home() {
           style={{ background: 'rgba(117, 58, 136, 0.7)' }}
         >
           <p className="text-shadow text-lg font-semibold text-white">
-            I'm Fredrik, a student and in my 2. year studying taking a bachelor
-            in informatics at "Norwegian University of Science and Technology"
-            (NTNU) Based In Trondheim, Norway. This is a portfolio website where
-            I showcase some of my personal projects and skills in the field of
-            software development. If you would like to know more about me, you
-            can check out my CV or contact me.
+            {"I'm Fredrik, a student and in my 2. year studying taking a bachelor in informatics at 'Norwegian University of Science and Technology' (NTNU) Based In Trondheim, Norway. This is a portfolio website where I showcase some of my personal projects and skills in the field of software development. If you would like to know more about me, you can check out my CV or contact me."}
           </p>
         </div>
       </div>
