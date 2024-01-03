@@ -13,6 +13,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { BackgroundImageTwo, ImageOfMe } from './ui/background-image';
 import ProjectBox from './ui/project-box';
+import { ProjectBoxTwo, ProjectBoxThree } from './ui/project-box';
 
 export default function Home() {
   useEffect(() => {
@@ -63,7 +64,13 @@ export default function Home() {
               <BackendBox />
             </div>
           </div>
+          <div className='pt-40'></div>
           <SkillBox title={'Projects'} />
+          <div className="flex w-full flex-col justify-between space-y-4 md:flex-row md:space-y-0">
+            <ProjectBox />
+            <ProjectBoxTwo />
+            <ProjectBoxThree/>
+          </div>
         </div>
       </div>
     </>
