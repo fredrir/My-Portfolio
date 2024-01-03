@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function ProjectBox() {
   const [isHovered, setIsHovered] = useState(false);
@@ -35,10 +36,13 @@ export default function ProjectBox() {
   };
 
   return (
+    <Link href={'https://github.com/appKom/online_events'}>
     <div
-      className="mx-auto my-4 rounded border-2 border-white p-2 shadow-lg"
+      className="mx-auto my-0 rounded border-2 border-white p-2 shadow-lg"
       style={{
         perspective: '1000px',
+        width: '320px',
+        height: '320px',
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -46,7 +50,7 @@ export default function ProjectBox() {
       <div style={flipStyle}>
         <div style={frontBackStyle}>
           <Image
-            src="/app-picture.png"
+            src="/online-events.png"
             alt="Image of the app"
             fill
             style={{
@@ -61,12 +65,13 @@ export default function ProjectBox() {
             Online Events
           </h3>
           <span style={{ color: 'white' }}>
-            An flutter app, designed for signing up for events, getting notified
-            for events, and playing games
+            A flutter app, designed for students, where they can sign up for events, get notified
+            about events, and play games
           </span>
         </div>
       </div>
     </div>
+    </Link>
   );
 }
 
@@ -104,10 +109,13 @@ export function ProjectBoxTwo() {
   };
 
   return (
+    <Link href={'https://github.com/fredrir/My-Portfolio'}>
     <div
-      className="mx-auto my-4 rounded border-2 border-white p-2 shadow-lg"
+      className="mx-auto  rounded border-2 border-white p-2 shadow-lg"
       style={{
         perspective: '1000px',
+        width: '320px',
+        height: '320px',
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -133,6 +141,7 @@ export function ProjectBoxTwo() {
         </div>
       </div>
     </div>
+    </Link>
   );
 }
 
@@ -163,17 +172,20 @@ export function ProjectBoxThree() {
     ...frontBackStyle,
     transform: 'rotateY(180deg)',
     background:
-      'linear-gradient(135deg, rgba(128, 0, 128, 0.5), rgba(75, 0, 30, 0.5))',
+      'linear-gradient(135deg, rgba(178, 34, 34, 0.5), 	rgba(0,0,139, 0.5))',
     padding: '10px',
     display: 'flex',
     flexDirection: 'column',
   };
 
   return (
+    <Link href={'https://github.com/appKom/online_events/tree/main/lib/pages/pixel'}>
     <div
-      className="mx-auto my-4 rounded border-2 border-white p-2 shadow-lg"
+      className="mx-auto  rounded border-2 border-white p-2 shadow-lg"
       style={{
         perspective: '1000px',
+        width: '320px',
+        height: '320px',
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -181,10 +193,12 @@ export function ProjectBoxThree() {
       <div style={flipStyle}>
         <div style={frontBackStyle}>
           <Image
-            src="/this-website.png"
+            src="/pixel-picture.png"
             alt="Image of the website"
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{
+              objectFit: 'cover',
+            }}
           />
         </div>
         <div style={backStyle}>
@@ -194,10 +208,11 @@ export function ProjectBoxThree() {
             Pixel
           </h3>
           <span style={{ color: 'white' }}>
-            A social media app, where user can share, comment and like photos.
+            A social media app, where users can share, comment and like photos.
           </span>
         </div>
       </div>
     </div>
+    </Link>
   );
 }

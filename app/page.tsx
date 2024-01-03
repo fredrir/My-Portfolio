@@ -24,7 +24,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      <div className="relative h-[300vh] w-full">
+      <div className="container relative h-[300vh] w-full">
         <BackgroundImage />
         <Navbar />
         <div className="flex h-full w-full flex-col items-start justify-start px-20 pt-16">
@@ -32,9 +32,12 @@ export default function Home() {
             <div className="flex-shrink-0">
               <WelcomeBox />
             </div>
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 hidden md:block">
               <ImageOfMe />
             </div>
+          </div>
+          <div className='md:hidden'>
+            <ImageOfMe/>
           </div>
           {/* <MyNameBox />*/}
           <AboutMeBox />
@@ -64,12 +67,38 @@ export default function Home() {
               <BackendBox />
             </div>
           </div>
-          <div className='pt-40'></div>
+          <div>
+            <img
+              src="/rocket-ship.svg"
+              width={'100px'}
+              alt="Rocket Ship"
+              className="rocket-ship"
+              
+            />
+          </div>
           <SkillBox title={'Projects'} />
           <div className="flex w-full flex-col justify-between space-y-4 md:flex-row md:space-y-0">
-            <ProjectBox />
-            <ProjectBoxTwo />
-            <ProjectBoxThree/>
+            <div
+              className="skill-box flex-grow"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              <ProjectBox />
+            </div>
+            <div
+              className="skill-box flex-grow"
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
+              <ProjectBoxTwo />
+            </div>
+            <div
+              className="skill-box flex-grow"
+              data-aos="fade-right"
+              data-aos-delay="900"
+            >
+              <ProjectBoxThree />
+            </div>
           </div>
         </div>
       </div>
