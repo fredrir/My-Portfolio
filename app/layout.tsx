@@ -1,6 +1,13 @@
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
 
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Fredrik Hansteen',
+  description: "Fredrik Hansteen's digital portfolio",
+};
+
  
 export default function RootLayout({
   children,

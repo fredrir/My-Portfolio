@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function SkillBox() {
+export default function SkillBox({ title }: { title: string }) {
   return (
     <div
       className="mx-auto my-4 w-full rounded border-2 border-white p-4 shadow-lg"
@@ -10,9 +10,7 @@ export default function SkillBox() {
       }}
     >
       <div className="flex w-full justify-center">
-        <p className="text-shadow text-[24px] font-bold text-white">
-          Skills
-        </p>
+        <p className="text-shadow text-[24px] font-bold text-white">{title}</p>
       </div>
     </div>
   );
@@ -41,34 +39,48 @@ export function LanguagesBox() {
             'linear-gradient(135deg, rgba(189, 195, 199, 0.5), rgba(75, 0, 30, 0.5))',
         }}
       >
-        <div className="flex items-center">
-          <img src="/dart-icon.svg" alt="Dart" className="mr-2 h-[28px]" />
-          <p className="text-shadow text-[20px] font-bold text-white">Dart</p>
-        </div>
+        <Link href={'https://dart.dev/'}>
+          <div className="flex items-center">
+            <img src="/dart-icon.svg" alt="Dart" className="mr-2 h-[28px]" />
+            <p className="text-shadow text-[20px] font-bold text-white">Dart</p>
+          </div>
+        </Link>
 
-        <div className="flex items-center">
-          <img src="/html-logo.svg" alt="HTML" className="mr-2 h-[28px]" />
-          <p className="text-shadow text-[20px] font-bold text-white">HTML</p>
-        </div>
+        <Link href={'https://developer.mozilla.org/en-US/docs/Web/HTML'}>
+          <div className="flex items-center">
+            <img src="/html-logo.svg" alt="HTML" className="mr-2 h-[28px]" />
+            <p className="text-shadow text-[20px] font-bold text-white">HTML</p>
+          </div>
+        </Link>
 
-        <div className="flex items-center">
-          <img src="/java-logo.svg" alt="Java" className="mr-2 h-[28px]" />
-          <p className="text-shadow text-[20px] font-bold text-white">Java</p>
-        </div>
-        <div className="flex items-center">
-          <img
-            src="/javascript-logo.svg"
-            alt="JavaScript"
-            className="mr-2 h-[28px]"
-          />
-          <p className="text-shadow text-[20px] font-bold text-white">
-            JavaScript
-          </p>
-        </div>
+        <Link href={'https://www.java.com/en/'}>
+          <div className="flex items-center">
+            <img src="/java-logo.svg" alt="Java" className="mr-2 h-[28px]" />
+            <p className="text-shadow text-[20px] font-bold text-white">Java</p>
+          </div>
+        </Link>
+
+        <Link href={'https://developer.mozilla.org/en-US/docs/Web/javascript'}>
+          <div className="flex items-center">
+            <img
+              src="/javascript-logo.svg"
+              alt="JavaScript"
+              className="mr-2 h-[28px]"
+            />
+            <p className="text-shadow text-[20px] font-bold text-white">
+              JavaScript
+            </p>
+          </div>
+        </Link>
+
+        <Link href={'https://www.python.org/'}>
         <div className="flex items-center">
           <img src="/python-logo.svg" alt="Python" className="mr-2 h-[28px]" />
           <p className="text-shadow text-[20px] font-bold text-white">Python</p>
         </div>
+        </Link>
+
+        <Link href={'https://www.typescriptlang.org/'}>
         <div className="flex items-center">
           <img
             src="/typescript-logo.svg"
@@ -79,6 +91,7 @@ export function LanguagesBox() {
             TypeScript
           </p>
         </div>
+        </Link>
       </div>
     </div>
   );
@@ -184,7 +197,7 @@ export function BackendBox() {
             Appwrite
           </p>
         </div>
-        <div className="flex items-center" >
+        <div className="flex items-center">
           <img
             src="/google-cloud-services-logo.svg"
             alt="Google Cloud Platform"
@@ -217,15 +230,13 @@ export function BackendBox() {
           </p>
         </div>
         <div className="flex items-center">
-          
           <p className="text-shadow text-[20px] font-bold text-white">
-           {' ...'}
+            {' ...'}
           </p>
         </div>
         <div className="flex items-center">
-          
           <p className="text-shadow text-[20px] font-bold text-white">
-           {' ...'}
+            {' ...'}
           </p>
         </div>
       </div>

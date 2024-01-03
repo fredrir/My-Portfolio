@@ -63,3 +63,25 @@ body{
   flex-grow: 1;    
 }
 
+.aos-animate {
+  animation-fill-mode: forwards;
+}
+
+[data-aos].aos-animate {
+  pointer-events: none;
+}
+
+[data-aos].aos-animate[data-aos-delay="300"] {
+  animation-delay: 0.3s;
+  pointer-events: all;
+}
+
+[data-aos].aos-animate[data-aos-delay="600"] {
+  animation-delay: 0.6s;
+  pointer-events: all;
+}
+
+[data-aos].aos-animate[data-aos-delay="900"] {
+  animation-delay: 0.9s;
+  pointer-events: all;
+}

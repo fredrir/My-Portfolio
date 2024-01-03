@@ -5,9 +5,11 @@ import FredrikLogo from '@/app/ui/fredrik-logo';
 import Link from 'next/link';
 import LinkLogo from '@/app/ui/link-logo';
 import { GitLogo } from '@/app/ui/link-logo';
+import { Bars3Icon } from '@heroicons/react/24/outline';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,7 +36,7 @@ const Navbar = () => {
       <div>
         <FredrikLogo />
       </div>
-      <div className="flex items-center gap-10">
+      <div className="navbar-links hidden items-center gap-10 md:flex">
         <Link href="/">
           <span className="text-white hover:text-gray-200">Home</span>
         </Link>
@@ -54,6 +56,12 @@ const Navbar = () => {
             </p>
           </div>
         </Link>
+      </div>
+      <div className="navbar-hamburger md:hidden">
+        <Bars3Icon
+          className="h-10 w-10 text-white"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        />
       </div>
     </nav>
   );

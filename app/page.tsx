@@ -10,8 +10,9 @@ import SkillBox from './ui/skill-box';
 import { BackendBox, FrontendBox, LanguagesBox } from './ui/skill-box';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect, } from 'react';
+import { useEffect } from 'react';
 import { BackgroundImageTwo, ImageOfMe } from './ui/background-image';
+import ProjectBox from './ui/project-box';
 
 export default function Home() {
   useEffect(() => {
@@ -22,18 +23,23 @@ export default function Home() {
   }, []);
   return (
     <>
-      <div className="relative h-[150vh] w-full">
+      <div className="relative h-[300vh] w-full">
         <BackgroundImage />
         <Navbar />
         <div className="flex h-full w-full flex-col items-start justify-start px-20 pt-16">
-        <div className="flex items-center space-x-20"> 
-            <WelcomeBox />
-            <ImageOfMe />
+          <div className="flex items-center justify-start space-x-20">
+            <div className="flex-shrink-0">
+              <WelcomeBox />
+            </div>
+            <div className="flex-shrink-0">
+              <ImageOfMe />
+            </div>
           </div>
           {/* <MyNameBox />*/}
           <AboutMeBox />
           <MyCvBox />
-          <SkillBox />
+          <SkillBox title={'Skills'} />
+
           <div className="flex w-full flex-col justify-between space-y-4 md:flex-row md:space-y-0">
             <div
               className="skill-box flex-grow"
@@ -57,11 +63,12 @@ export default function Home() {
               <BackendBox />
             </div>
           </div>
+          <SkillBox title={'Projects'} />
         </div>
       </div>
-      <div className="relative h-[150vh] w-full text-white">
-        <BackgroundImageTwo/>
-      </div>
+      {/* <div className="relative h-[150vh] w-full text-white">
+        <BackgroundImageTwo />
+      </div> */}
     </>
   );
 }
