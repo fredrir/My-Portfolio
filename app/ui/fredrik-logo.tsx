@@ -7,7 +7,11 @@ export default function FredrikLogo() {
       className={`${lusitana.className} flex flex-row items-center leading-none text-white`}
     >
       <CodeBracketIcon className="h-12 w-12 rotate-[15deg]" />
-      <p className="text-[44px]">Fredrik Hansteen</p>
+      <p className="text-[32px]">{'Fredrik Hansteen'}</p>
     </div>
   );
 }
+
+
+
+
