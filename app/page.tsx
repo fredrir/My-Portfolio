@@ -66,9 +66,6 @@ export default function Home() {
           <SkillBox title={'Projects'} />
         </div>
       </div>
-      {/* <div className="relative h-[150vh] w-full text-white">
-        <BackgroundImageTwo />
-      </div> */}
     </>
   );
 }

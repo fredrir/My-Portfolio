@@ -85,3 +85,8 @@ body{
   animation-delay: 0.9s;
   pointer-events: all;
 }
+
+.link-hover-effect:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease-in-out; 
+}
