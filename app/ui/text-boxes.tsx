@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+
 export default function WelcomeBox() {
     return (
       <div
@@ -11,7 +12,7 @@ export default function WelcomeBox() {
         }}
       >
         <p className="text-shadow text-[32px] font-bold text-white">
-          Welcome to my portfolio
+          {"Hi, I'm Fredrik."}
         </p>
       </div>
     );
@@ -42,7 +43,7 @@ export function AboutMeBox() {
     >
       <p className="text-shadow text-lg font-semibold text-white ">
         {
-          "Hello! I'm Fredrik, currently in my second year pursuing a Bachelor's degree in Informatics at the Norwegian University of Science and Technology (NTNU) in Trondheim, Norway. Welcome to my portfolio website, a space where I exhibit my personal projects and expertise in software development. For a deeper insight into my professional journey, feel free to explore my CV or get in touch with me."
+          "I'm currently in my second year pursuing a Bachelor's degree in Informatics at the Norwegian University of Science and Technology (NTNU) in Trondheim, Norway. Welcome to my portfolio website, a space where I exhibit my personal projects and expertise in software development. For a deeper insight into my professional journey, feel free to explore my CV or get in touch with me."
         }
       </p>
     </div>
