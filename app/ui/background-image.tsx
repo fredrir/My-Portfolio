@@ -15,8 +15,7 @@ export default function BackgroundImage() {
       <Image
         src="/sup-background.png"
         alt="background image"
-        layout="fill"
-        objectFit="cover"
+        fill
       />
     </div>
   );

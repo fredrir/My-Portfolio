@@ -72,9 +72,10 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <img
+            <Image
               src="/rocket-ship.svg"
-              width={'100px'}
+                width={100}
+                height={100}
               alt="Rocket Ship"
               className="rocket-ship"
             />

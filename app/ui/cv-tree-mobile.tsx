@@ -21,17 +21,17 @@ function InfoBoxOne() {
     <div className="md:block">
       <div className="CvInfoBoxOne">
         <p className="text-shadow text-[16px] font-bold text-white">
-          August 2023 - Today
+          {"August 2023 - Today"}
         </p>
       </div>
       <div className="CvInfoBoxTwo">
         <p className="text-shadow text-[16px] font-bold text-white">
-          August 2023 - Descember 2023
+          {"August 2023 - Descember 2023"}
         </p>
       </div>
       <div className="CvInfoBoxThree">
         <p className="text-shadow text-[16px] font-bold text-white">
-          August 2023 - Descember 2023
+          {"August 2023 - Descember 2023"}
         </p>
       </div>
     </div>
@@ -51,12 +51,12 @@ function CvBoxOne() {
     >
       <div className="flex w-full justify-center">
         <p className="text-shadow text-[20px] font-bold text-white">
-          Volunteering Developer
+          {"Volunteering Developer"}
         </p>
       </div>
       <div className="flex w-full justify-center">
         <p className="text-shadow text-[14px] font-bold text-white">
-            "Online" Student Organization
+            {'"Online" Student Organization'}
         </p>
       </div>
 
