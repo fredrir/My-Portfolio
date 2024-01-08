@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`sticky top-0 z-50 flex items-center justify-between p-4 transition-colors ${
+      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 transition-colors w-full ${
         isScrolled ? 'bg-[#000032]' : 'bg-transparent'
       }`}
     >
@@ -38,10 +38,14 @@ const Navbar = () => {
       </div>
       <div className="navbar-links hidden items-center gap-10 md:flex">
         <Link href="/">
-          <span className="text-white hover:text-gray-200">Home</span>
+          <div className="home-box rounded border-2 border-white p-4 shadow-lg">
+            <p className="home-text text-white hover:text-gray-200">Home</p>
+          </div>
         </Link>
         <Link href="/">
-          <span className="text-white hover:text-gray-200">CV</span>
+          <div className="rounded border-2 border-white p-4 shadow-lg">
+            <span className="text-white hover:text-gray-200">CV</span>
+          </div>
         </Link>
         <Link href="https://github.com/fredrir">
           <GitLogo />
