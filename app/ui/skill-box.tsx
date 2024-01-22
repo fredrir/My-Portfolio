@@ -254,12 +254,12 @@ export function BackendBox() {
 
         <div className="flex items-center">
           <p className="text-shadow text-[20px] font-bold text-white">
-            {' ...'}
+            {'Django'}
           </p>
         </div>
         <div className="flex items-center">
           <p className="text-shadow text-[20px] font-bold text-white">
-            {' ...'}
+            {'OAuth'}
           </p>
         </div>
       </div>

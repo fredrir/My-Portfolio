@@ -53,8 +53,10 @@ function InfoBoxOne() {
 function CvLogoBoxOne() {
   return (
     <div className="CvLogoBoxOne">
-      <img
-        src="/online_hvit_o.svg"
+      <Image
+        src="/Online_hvit_o.svg"
+        width={70}
+        height={70}
         alt="Online Logo"
         className="mr-10 h-[70px]"
       />
@@ -65,7 +67,7 @@ function CvLogoBoxOne() {
 function CvLogoBoxTwo() {
   return (
     <div className="CvLogoBoxTwo">
-      <img src="/ntnu-logo.svg" alt="NTNU Logo" className="mr-10 h-[70px]" />
+      <Image src="/ntnu-logo.svg" alt="NTNU Logo" width={70} height={70} className="mr-10 h-[70px]" />
     </div>
   );
 }
@@ -210,7 +212,7 @@ function CvBoxThree() {
               guidance in mathematics to students.
             </li>
             <li>
-              Conductedweekly tutoring sessions, where I thought mathematical
+              Conducted weekly tutoring sessions, where I thought mathematical
               concepts in order to enhance students understanding and academic
               performance.
             </li>

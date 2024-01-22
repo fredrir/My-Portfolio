@@ -190,7 +190,7 @@ function CvBoxThree() {
               guidance in mathematics to students.
             </li>
             <li>
-              Conductedweekly tutoring sessions, where I thought mathematical
+              Conducted weekly tutoring sessions, where I thought mathematical
               concepts in order to enhance students understanding and academic
               performance.
             </li>

@@ -37,12 +37,12 @@ const Navbar = () => {
         <FredrikLogo />
       </div>
       <div className="navbar-links hidden items-center gap-10 md:flex">
-        <Link href="/">
+        <Link href=''>
           <div className="home-box rounded border-2 border-white p-4 shadow-lg">
             <p className="home-text text-white hover:text-gray-200">Home</p>
           </div>
         </Link>
-        <Link href="/">
+        <Link href="/cv">
           <div className="rounded border-2 border-white p-4 shadow-lg">
             <span className="text-white hover:text-gray-200">CV</span>
           </div>

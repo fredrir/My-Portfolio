@@ -63,7 +63,7 @@ export function AboutMeBox() {
 
 export function MyCvBox() {
   return (
-    <Link href={''}>
+    <Link href={'/cv'}>
       <div className="cv-box my-4 rounded border-2 border-white p-4 shadow-lg">
         <p className="cv-text text-shadow text-lg font-semibold text-white">
           My CV
