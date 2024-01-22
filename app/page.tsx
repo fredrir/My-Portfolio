@@ -17,6 +17,7 @@ import ProjectBox from './ui/project-box';
 import { ProjectBoxTwo, ProjectBoxThree } from './ui/project-box';
 import CvTree from './ui/cv-tree';
 import CvTreeMobile from './ui/cv-tree-mobile';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
   useEffect(() => {
@@ -136,6 +137,7 @@ export default function Home() {
             }}
           />
         </div>
+        <Analytics />
       </div>
     </>
   );
