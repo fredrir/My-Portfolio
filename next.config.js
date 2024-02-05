@@ -6,6 +6,10 @@ module.exports = {
           source: '/cv',
           destination: '/cv.pdf', 
         },
+        {
+          source: '/recaptcha',
+          destination: '/recaptcha.html', 
+        },
       ];
     },
   };
