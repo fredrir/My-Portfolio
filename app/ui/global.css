@@ -122,7 +122,7 @@ body {
     transform: translateX(0);
   }
   to {
-    transform: translateX(100vw);
+    transform: translateX(50vw);
   }
 }
 
@@ -290,8 +290,9 @@ body {
 
 .ContactMeFormDesktop {
   position: relative;
-  top: 105%;
-  right: -635px;
+  top: 160.5%;
+  width: max-content;
+  left: 0;
   transform: translate(-50%, -50%);
 }
 

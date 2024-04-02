@@ -50,6 +50,7 @@ export function AboutMeBox() {
         background:
           'linear-gradient(135deg, rgba(25, 0, 51, 0.7), rgba(75, 0, 30, 0.7))',
         maxWidth: '600px',
+        minHeight: '250px',
       }}
     >
       <p className="text-shadow text-lg font-semibold text-white ">

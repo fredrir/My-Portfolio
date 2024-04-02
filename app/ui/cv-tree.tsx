@@ -3,14 +3,13 @@ import React, { useState } from 'react';
 import { ContactMeForm } from './contact-me-form';
 
 export default function CvTree() {
-    
   return (
-    <div className="cvTree relative md:block">
+    <div className="cvTree relative h-7 md:block">
       <CvLogoBoxOne />
       <CvLogoBoxTwo />
       <CvLogoBoxThree />
       <InfoBoxOne />
-      
+
       <div className="cvTreeBox cv-tree-box-1">
         <CvBoxOne />
       </div>
@@ -19,33 +18,43 @@ export default function CvTree() {
       </div>
       <div className="cvTreeBox cv-tree-box-3">
         <CvBoxThree />
-        
       </div>
       <p className="ContactMeText text-shadow text-[30px] font-bold text-white">
         Contact Me
       </p>
+      <div
+        style={{
+          background:
+            'linear-gradient(90deg, rgba(49,5,169,1) 0%, rgba(121,9,104,1) 43%, rgba(9,108,65,1) 100%)',
+          minHeight: '40vh',
+          maxHeight: '85vh',
+        }}
+        className="ContactMeFormDesktop hide-on-mobile "
+      >
+        <ContactMeForm />
+      </div>
     </div>
   );
 }
 
 function InfoBoxOne() {
   return (
-    <div className='md:block'>
-    <div className="CvInfoBoxOne">
-      <p className="text-shadow text-[16px] font-bold text-white">
-        August 2023 - Today
-      </p>
-    </div>
-    <div className="CvInfoBoxTwo">
-    <p className="text-shadow text-[16px] font-bold text-white">
-        August 2023 - Descember 2023
-      </p>
-    </div>
-    <div className="CvInfoBoxThree">
-    <p className="text-shadow text-[16px] font-bold text-white">
-        Summer 2023
-      </p>
-    </div>
+    <div className="md:block">
+      <div className="CvInfoBoxOne">
+        <p className="text-shadow text-[16px] font-bold text-white">
+          August 2023 - Today
+        </p>
+      </div>
+      <div className="CvInfoBoxTwo">
+        <p className="text-shadow text-[16px] font-bold text-white">
+          August 2023 - Descember 2023
+        </p>
+      </div>
+      <div className="CvInfoBoxThree">
+        <p className="text-shadow text-[16px] font-bold text-white">
+          Summer 2023
+        </p>
+      </div>
     </div>
   );
 }
@@ -67,7 +76,13 @@ function CvLogoBoxOne() {
 function CvLogoBoxTwo() {
   return (
     <div className="CvLogoBoxTwo">
-      <Image src="/ntnu-logo.svg" alt="NTNU Logo" width={70} height={70} className="mr-10 h-[70px]" />
+      <Image
+        src="/ntnu-logo.svg"
+        alt="NTNU Logo"
+        width={70}
+        height={70}
+        className="mr-10 h-[70px]"
+      />
     </div>
   );
 }
@@ -161,8 +176,8 @@ function CvBoxTwo() {
         <div className=" flex items-center">
           <ul className="text-shadow list-disc space-y-2 pl-6 text-[14px] font-bold text-white">
             <li>
-              Completed a 6-week internship, focusing on comprehensive
-              market research and analysis within the tanker industry.
+              Completed a 6-week internship, focusing on comprehensive market
+              research and analysis within the tanker industry.
             </li>
             <li>
               Conducted in-depth research on global market trends, competitor
@@ -226,4 +241,3 @@ function CvBoxThree() {
     </div>
   );
 }
-
