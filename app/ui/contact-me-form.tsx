@@ -47,12 +47,13 @@ export function ContactMeForm() {
 
   return (
     <div
-      className="ContactMeForm my-4 rounded border-2 border-white p-4 shadow-lg" id="bottom-of-page"
+      className="ContactMeForm my-4 rounded border-2 border-white p-4 shadow-lg"
+      id="bottom-of-page"
       style={{
         background:
           'linear-gradient(135deg, rgba(25, 0, 51, 0.7), rgba(75, 0, 30, 0.7))',
-        maxWidth: '600px',
-        minWidth: '200px',
+        maxWidth: '450px',
+        minWidth: '400px',
       }}
     >
       <form

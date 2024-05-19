@@ -117,7 +117,7 @@ export default function Home() {
             <div className="hide-on-desktop flex w-full items-center justify-center">
               <CvTreeMobile />
             </div>
-            <div className="hide-on-desktop">
+            <div className="hide-on-desktop flex flex-col justify-center">
               <ContactMeForm />
             </div>
           </div>
